@@ -1,0 +1,5 @@
+*.html
+*.tfstate
+*.pem
+*.log
+**/bin/*.sh

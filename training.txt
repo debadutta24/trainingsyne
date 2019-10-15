@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 this is a test
 hello
+=======
+anything
+everything
+>>>>>>> indi

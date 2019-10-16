@@ -1,1 +1,82 @@
-anything
+    1  sudo yum install -y yum-utils device-mapper-persistent-data lvm2
+    2  sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+    3  docker --version
+    4  sudo yum install -y docker-ce docker-ce-cli containerd.io
+    5  docker --version
+    6  docker ps
+    7  sudo systemctl start docker
+    8  docker ps
+    9  sudo chown centos:users /var/run/docker.sock
+   10  docker ps
+   11  sudo docker run hello-world
+   12  history
+
+   13  cat /etc/redhat-release
+   14  docker run -i -t centos:latest /bin/bash
+   15  ps -ef | wc -l
+   16  rpm -qa | wc -l
+   17  docker run -i -t centos:latest /bin/bash
+   15  ps -ef | wc -l
+   16  rpm -qa | wc -l
+
+
+   22  history
+   23  docker run ubuntu:latest cat /etc/lsb-release
+   24  docker run -d jpetazzo/clock
+   25  date
+   26  docker ps
+   27  docker ps -a
+   28  docker ps
+   29  docker logs e6f1eb77ba4a
+   30  date
+   31  docker logs e6f1eb77ba4a
+   32  docker logs --follow e6f1eb77ba4a
+   33  docker logs --follow --tail 1  e6f1eb77ba4a
+   34  docker ps
+   35  docker ps -a
+   36  docker run -d --name kul jpetazzo/clock
+   37  docker ps
+   38  docker run -d --name kul jpetazzo/clock
+   39  docker ps -q
+   40  docker ps -qa
+   41  docker ps -l
+   42  history
+
+
+===========================================================
+
+   51  docker stop e6f1eb77ba4a
+   52  docker kill kul
+   53  docker ps -a
+   54  docker rm lucid_nobel
+   55  docker ps -a
+   56  docker ps
+   57  docker system df
+   58  docker ps
+   59  docker ps -a
+   60  docker run -itd centos:latest --name kul-demo /bin/bash
+   61  docker run -itd --name kul-demo centos:latest /bin/bash
+   62  docker ps
+   63  docker exec -it kul-demo /bin/bash
+   64  docker system df
+   65  docker ps
+   66  docker run -itd centos:latest --name kul-demo-1 /bin/bash
+   67  docker run -itd --name kul-demo-1 centos:latest /bin/bash
+   68  docker exec -it kul-demo-1 /bin/bash
+   69  history
+   70  docker diff kul-demo
+   71  docker images
+   72  docker commit -a "Kul" -m "added git" kul-demo centos-sync-oct:1.0
+   73  docker images
+   74  docker system df
+   75  docker commit -a "Kul" -m "added git" kul-demo centos-sync-oct
+   76  docker images
+   77  docker commit -a "Kul" -m "added git" kul-demo centos-sync-oct
+   78  docker images
+   79  docker rmi 6b8dcd71f795 7af8267ff332
+   80  docker images
+   81  docker history ccd0bf3d4ab7
+   82  history
+
+
+

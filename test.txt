@@ -1,0 +1,14 @@
+Hi I am test file. -1
+change
+TAG demo
+reset demo
+reset demo
+reset demo
+rebase demo
+rebase demo
+rebase demo
+cherry-pick demo
+stash demo
+remote-branch demo
+protected-branch demo
+protected-branch demo - remove stale approval
